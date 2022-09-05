@@ -74,8 +74,9 @@ article{
     font-size: 13vw;
     font-family: police_la_meute;
     width: 50vw;
+    text-align: center;
 }
-#description,#name {
+#description{
     text-align: center;
 }
 
@@ -90,7 +91,7 @@ article{
     .container-informations{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10% 80% 10%;
+        grid-template-rows: 10% 80vmax 10%;
     }
     #description{
         font-size: 50%;
@@ -107,8 +108,15 @@ article{
     }
 }
 
-@media screen and (max-height:750px) {
+@media screen and (max-height:800px) and (max-width:400) {
     .container-informations{
         height: 50vmax;
+    }
+    section{
+        background-image: url(../assets/images/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: right ;
     }
 }
