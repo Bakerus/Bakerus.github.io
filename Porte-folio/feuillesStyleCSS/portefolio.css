@@ -1,0 +1,114 @@
+@font-face {
+    font-family: police_la_meute;
+    src: url(../assets/polices/Hellion.ttf);
+}
+*{
+    text-decoration: none;
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    font-family: poppins;
+}
+section{
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 5fr 1fr;
+    grid-template-rows: 2fr 4fr;
+}
+#navbar-left {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+#navbar-right{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    display: flex;
+    justify-content: space-between;
+}
+#logoblue , .fa-bars{
+    color: blue;
+}
+#logowhite{
+    color: white;
+}
+.container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+.fa-bars{
+    display: none !important;
+}
+.container-informations{
+    display: grid;
+    grid-template-columns: 5% 50% 45%;
+    grid-template-rows: 10% 90% 5%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#name-container-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    width: 30%;
+}
+#name{
+    font-size: 13vw;
+    font-family: police_la_meute;
+    width: 50vw;
+}
+#description,#name {
+    text-align: center;
+}
+
+@media screen and (max-width:1400px) and (min-width:100px) {
+    #navbar-right{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important;
+        margin: 0 10px;
+    }
+    .container-informations{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 80% 10%;
+    }
+    #description{
+        font-size: 50%;
+    }
+    #logo{
+        width: 50%;
+    }
+    section{
+        background-image: url(../assets/images/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-position: right ;
+    }
+}
+
+@media screen and (max-height:750px) {
+    .container-informations{
+        height: 50vmax;
+    }
+}
