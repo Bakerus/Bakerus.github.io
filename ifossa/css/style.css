@@ -1,0 +1,243 @@
+@import url(variables.css);
+/*----------------------------------------------------------- Section_presentation ------------------------------------------------------------------*/
+.container-presentation{
+    background-image: linear-gradient(rgba(24, 17, 75, 0.8),rgba(24, 17, 75, 0.8)),url(../ifossa_assets/images/group-african-medical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top bottom;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 12% 40vmax 1fr;
+    grid-template-rows: 20% 1fr;
+}
+.grid-presentation{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+.container-title-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+}
+.section-logo{
+    width: 20vmax;
+}
+h3,h1{
+    color: white !important;
+}
+
+.vr-title{
+    width: 1vw;
+}
+/*----------------------------------------------------------- fin Section_presentation ------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------Section Descriptions------------------------------------------------------------------*/
+.container-description{
+    display: grid;
+    grid-template-columns: 10% 85% 5%;
+    grid-template-rows: 45% 60vmax;
+}
+.grid-description{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    height:100%;;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 30% 30% 1fr;
+}
+.section-logo{
+    grid-column-start: 1 ;
+}
+.text-description{
+    grid-column-start: 3;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container-description-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.title {
+    font-family: police_ifossa_extra_bold;
+    color:  #4B4486 !important;
+    margin-left: 40px;
+    
+}
+.texts{
+    font-family: police_ifossa_Regular;
+    margin-left: 40px;
+    color: #616161 !important;
+}
+span{
+    font-family: police_ifossa_bold;
+}
+/*-----------------------------------------------------------fin Section Descriptions------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------Section Actualités------------------------------------------------------------------*/
+.container-actualités{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    height: 100vh;
+}
+.container-description-title-actualites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.iamges-actualités { 
+    filter: brightness(50%);
+    width: 80vw;
+    height: 70vh;
+    z-index: 2;
+}
+.sect-logo-desc{
+    width: 20vmax;
+}
+/*-----------------------------------------------------------fin Section Actualités------------------------------------------------------------------*/
+
+
+.container-caroussel-actualite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*-----------------------------------------------------------fin Section Actualités------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------debut Section Campus------------------------------------------------------------------*/
+
+.container-Campus{
+    display: grid;
+    grid-template-columns: 8% 1fr 8%;
+    grid-template-rows: 10% 1fr 10%;
+    height: 70vh;
+}
+
+.container-title-caroussel-campus{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.image-campus{
+    width: 50vw;
+    height: 50vh;
+}
+
+
+.container-title-description-campus{
+    width: 40%;
+}
+
+@media screen  and (max-width:1260px) {
+    .container-image-campus {
+        width: 40%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .container-Campus{
+        grid-template-rows: 50% 1fr;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .container-title-caroussel-campus {
+        flex-direction: column ;
+        height: 80vh;
+    }
+    .container-title-description-campus {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container-image-campus {
+        width: 100%;
+        height: 60%;
+    }
+    .cont-desc-title-campus{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:650px) and (max-width:1270px) {
+    .grid-description{
+        grid-template-columns: 25% 5% 1fr;
+    }
+    .container-description{
+        display: grid;
+        grid-template-columns: 5% 95% 5%;
+    }
+}
+@media screen and (min-width:100px) and (max-width:650px) {
+    .grid-description{
+        grid-template-columns: 34% 1fr 5%;;
+    }
+    .container-description{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .title {
+        margin-left: 20px;  
+        font-size: 1.3rem; 
+    }
+    .texts{
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+    .sect-logo-desc{
+        width: 15vmax;
+        height: 20vmax;
+    }
+    .text-description{
+        grid-column-start: 2;
+    }
+    .container-presentation{
+        background-size: cover;
+        background-position: center bottom;
+    }
+    
+}

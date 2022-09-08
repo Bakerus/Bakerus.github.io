@@ -1,0 +1,71 @@
+@import url(variables.css);
+*{
+    font-family: police_ifossa_medium;
+    font-size: var(--size-simple-text);
+    color:  var(--color-nav-text) !important;
+}
+nav{
+    position: fixed ;
+}
+.container-logo-name{
+    width: 280px !important;
+    align-items: center; 
+    display: flex !important;
+    justify-content: space-between !important;
+}
+#nav-logo{
+    width: 80px;
+}
+.vr{
+    width: 7px;
+    height: 60px;
+    text-align: center;
+    background-color: #029642;
+    opacity: unset;
+}
+.connexionBtn{
+    border-radius: 0%;
+    outline: none;
+    transition: all .4s ease-out 0s;
+}
+.connexionBtn:hover{
+   background-color: white !important;
+   border: solid 1px #dc3545;
+   color: #ad303d !important;
+}
+.btn{
+    background-color: #dc3545 !important;
+    color: white !important;
+    text-decoration: none;
+    border: none;
+}
+.navbar-nav {
+   
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    
+}
+
+a.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+a.nav-link:hover{
+    color: #dc3545 !important;
+}
+.navbar{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-brand{
+ font-family:  police_ifossa_extra_bold;
+ font-size: 40px;
+}
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none ;
+}
